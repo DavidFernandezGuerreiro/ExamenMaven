@@ -49,8 +49,8 @@ public class ClassJsoup {
         Document doc = Jsoup.parse(html);
         Elements tiempoNumero=doc.getElementsByClass("today_nowcard-temp").not(".pad_10").not(".pad_20");
         Elements fraseTiempo=doc.getElementsByClass("today_nowcard-phrase").not(".pad_10").not(".pad_20");
-        System.out.println(tiempoNumero);
-        System.out.println(fraseTiempo);
+        System.out.println(tiempoNumero.text());
+        System.out.println(fraseTiempo.text());
     }
     
     
